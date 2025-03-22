@@ -15,6 +15,7 @@ import jakarta.validation.constraints.Pattern;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 public class Personne {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
