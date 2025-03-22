@@ -34,7 +34,7 @@ public class Personne {
     @Size(min = 8)
     @Column(length = 60)
     private String password;
-    @Column(columnDefinition = "CHAR(1) CHECK (sexe IN ('F', 'M'))")
+
     private String sexe;
 
 

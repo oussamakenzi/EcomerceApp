@@ -6,24 +6,14 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
-
 @Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Produit {
+public class stock {
     @Id
     private Long id;
-    private String nomProduit;
-    private String adresse;
-    private Double prixUnitaire;
-    private Double prixVente;
-    private String reference;
-    private String designation;
-    private String description;
 
-
-
+   private Integer quantity;
 
 }
